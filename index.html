@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <title>shapes generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body class="container">
+    <div class="details-container">
+        <p>
+            <span>Name</span><br>
+            Mariraj K
+        </p>
+        <p>
+            <span>College</span><br>
+            Alagappa Chettiar Govt College of Engineering and Technology
+        </p>
+        <p>
+            <span>E-mail</span><br>
+            mariraj.krishnan@outlook.com
+        </p>
+        <p>
+            <span>Phone</span><br>
+            +91 8248983454
+        </p>
+    </div>
+    <div class="input-container">
+        <p>
+            <label for="quantity">Number of shapes</label><br>
+            <input type="number" min="1" id="quantity">
+            <button onclick="addShape()">+</button>
+        </p>
+        <p id="score">
+            score: <span>0</span>
+        </p>
+        
+        <p style="display: none;">
+            <label for="remove-position">Remove shape</label><br>
+            <input type="number" min="1" id="remove-position" disabled>
+            <button onclick="removeShape()" disabled>-</button>
+        </p>
+            
+        <p style="display: none;">
+            <span>Availabe shapes</span><br>
+            <span id="square-count" class="count">0</span>
+            <span id="circle-count" class="count">0</span>
+            <span id="rect-count" class="count">0</span>
+            <span id="oval-count" class="count">0</span>
+        </p>
+    </div>
+    <div class="timer"></div>
+    <div class="shape-container">
+    </div>
+</body>
+</html>
